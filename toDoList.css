@@ -1,0 +1,141 @@
+*:not(body) {
+  transition: 0.3s;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(./ice.png), linear-gradient(white, cyan);
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .form *:hover,
+.container .tasks *:hover,
+.container .infoz *:hover {
+  filter:drop-shadow(0 0 4px blue);
+}
+
+div {
+  text-align: center;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+/* --------------- */
+
+.form {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(0 121 255 / 50%);
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.tasks {
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgb(0 121 255 / 50%);
+  border: 2px solid #333;
+  padding: 0 10px;
+}
+.tasks div {
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  overflow-wrap: anywhere;
+}
+.cont {
+  width: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.del {
+  width: 10px;
+  height: 20px;
+  padding: 0 5px;
+  color: white;
+  border-radius: 6px;
+  background-color: rgb(191, 21, 21);
+  cursor: pointer;
+}
+.done {
+  width: 10px;
+  height: 20px;
+  padding: 0 5px;
+  color: white;
+  border-radius: 6px;
+  background-color: rgb(21, 191, 41);
+  cursor: pointer;
+}
+.input {
+  width: 300px;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.add{
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(134 201 255);
+  cursor: pointer;
+}
+.add:hover {
+  filter: grayscale(50%);
+}
+.del:hover {
+  filter: grayscale(50%);
+}
+
+.infoz{
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(0 121 255 / 50%);
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.added{
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0 121 255);
+  cursor: pointer;
+}
+.checkAll{
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(47, 191, 21);
+  cursor: pointer;
+}
+.finshed {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.delAll{
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(191, 21, 21);
+  cursor: pointer;
+}
+
